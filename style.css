@@ -266,7 +266,7 @@ textarea::-webkit-input-placeholder{
 .data__li::after{
     display: inline-block;
     font-weight: 400;
-    content: attr(id);
+    content: attr(value);
 }
 
 /* Finish code garbage */

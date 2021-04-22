@@ -21,13 +21,13 @@ let painCards = (dataReg)=>{
    let contCard= document.getElementById('content-cards');
    contCard.innerHTML= '';
    for (const key in dataReg) {
-      contCard.innerHTML+=`<div class="card" id="${dataReg[key].alpha3Code}">
+      contCard.innerHTML+=`<div class="card" value="${dataReg[key].alpha3Code}">
       <img src="${dataReg[key].flag}" class="img img__card" alt="">
       <label for="${key}" class="label label__country">${dataReg[key].name}</label>
       <ul>
-      <li class="li data__li" id="${dataReg[key].population}">Population: </li>
-      <li class="li data__li" id="${dataReg[key].region}">Region: </li>
-      <li class="li data__li" id="${dataReg[key].capital}">Capital: </li>
+      <li class="li data__li" value="${dataReg[key].population}">Population: </li>
+      <li class="li data__li" value="${dataReg[key].region}">Region: </li>
+      <li class="li data__li" value="${dataReg[key].capital}">Capital: </li>
       </ul>
       </div>`;
    }
@@ -67,13 +67,13 @@ document.getElementById('input__content').addEventListener('keyup', (e)=>{
             let result = new String(iterator.name.toLowerCase().trim().replace(/ /g, ""));
             if(result.indexOf(keySearch) !== -1){
                console.log(iterator.alpha3Code);
-               contCard.innerHTML+=`<div class="card" id="${iterator.alpha3Code}">
+               contCard.innerHTML+=`<div class="card" value="${iterator.alpha3Code}">
                <img src="${iterator.flag}" class="img img__card" alt="">
                <label for="${iterator.alpha3Code}" class="label label__country">${iterator.name}</label>
                <ul>
-               <li class="li data__li" id="${iterator.population}">Population: </li>
-               <li class="li data__li" id="${iterator.region}">Region: </li>
-               <li class="li data__li" id="${iterator.capital}">Capital: </li>
+               <li class="li data__li" value="${iterator.population}">Population: </li>
+               <li class="li data__li" value="${iterator.region}">Region: </li>
+               <li class="li data__li" value="${iterator.capital}">Capital: </li>
                </ul>
                
                </div>`;
