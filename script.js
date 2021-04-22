@@ -23,7 +23,7 @@ let painCards = (dataReg)=>{
    for (const key in dataReg) {
       contCard.innerHTML+=`<div class="card" id="${dataReg[key].alpha3Code}">
       <img src="${dataReg[key].flag}" class="img img__card" alt="">
-      <label for="${key}" class="label label__country">${dataReg[key].name}</label>
+      <label for="${dataReg[key].name}" class="label label__country">${dataReg[key].name}</label>
       <ul>
       <li class="li data__li" >Population: ${dataReg[key].population}</li>
       <li class="li data__li" >Region: ${dataReg[key].region}</li>
