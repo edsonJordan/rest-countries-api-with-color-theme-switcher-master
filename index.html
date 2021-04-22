@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header " id="header" ><!-- ChangeMode -->
+            <div class="header--tittle ">
+                <label for="" class="label label__tittle "  >Where in the world?</label>
+            </div>
+            <div class="header--check">
+                <div class="content-check">
+                   <input type="checkbox" class="input input__header" name="" id="input__header">
+                   <label for="input__header" class="label label__check" id="header-check-label"></label>
+                   <div class="check--img" id="check--img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content " id="content"><!-- Change Mode -->
+            <div class="content--header"> 
+                <!-- Change Mode search icon -->
+                <input type="text" id="input__content"  class="input input__content" placeholder="Search for a country...">
+                <div class="content--select">
+                    <!-- select__tittle__changeMode -->
+                    <div name="" class="select select__tittle" id="select__tittle">
+                        Filter by Region
+                    </div>
+                    <div class="select__items toggle" id="select__items">
+                        <div class="item--option">Africa</div>
+                        <div class="item--option">Americas</div>
+                        <div class="item--option">Asia</div>
+                        <div class="item--option">Europe</div>
+                        <div class="item--option">Oceania</div>
+                    </div>
+                </div>
+            </div>
+            <!-- changeMode -> content-card__changeMode -->
+            <div class="content-cards " id="content-cards">
+                   <!--  <div class="card" >
+                        <img src="https://restcountries.eu/data/ala.svg" class="img img__card" alt="">
+                        <label for="" class="label label__country">Germany</label>
+                            <li class="li data__li" attr-data="81,770,900">Population: </li>
+                            <li class="li data__li" attr-data="Europe">Region: </li>
+                            <li class="li data__li" attr-data="Berlin">Capital: </li>
+                        
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="changeMode.js"></script>
+</body>
+</html>
