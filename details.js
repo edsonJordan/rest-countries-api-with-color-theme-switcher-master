@@ -25,9 +25,10 @@ const paintDetails = (dataCountry) =>{
                         </div>
                         <div class="card__details__content">
                             <div class="card__details__country">
-                                <label for="" class="label label__country label__country__details">${dataCountry.name}</label>
+                                <label for="${dataCountry.name}" class="label label__country label__country__details">${dataCountry.name}</label>
                             </div>
                             <div class="card_details__info">
+                                <lu>
                                 <li class="li data__li data__li__details" attr-data="${dataCountry.nativeName}">Native Name: </li>
                                 <li class="li data__li data__li__details" attr-data="${dataCountry.topLevelDomain[0]}">Top Level Domain: </li>
                                 <li class="li data__li data__li__details" attr-data="${dataCountry.population}">Population: </li>                                
@@ -35,7 +36,8 @@ const paintDetails = (dataCountry) =>{
                                 <li class="li data__li data__li__details" attr-data="${dataCountry.capital}">Capital: </li>
                                 <li class="li data__li data__li__details" attr-data="${dataCountry.region}">Region: </li>
                                 <li class="li data__li data__li__details" attr-data="${dataCountry.subregion}">Sub Region: </li>
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.currencies[0].name}">Currencies: </li>                                
+                                <li class="li data__li data__li__details" attr-data="${dataCountry.currencies[0].name}">Currencies: </li>    
+                                </lu>                            
                             </div>                        
                             <div class="card__details__footer">
                                 <div class="card__details__footer__tittle">
