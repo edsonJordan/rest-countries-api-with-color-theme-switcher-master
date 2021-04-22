@@ -24,9 +24,11 @@ let painCards = (dataReg)=>{
       contCard.innerHTML+=`<div class="card" id="${dataReg[key].alpha3Code}">
       <img src="${dataReg[key].flag}" class="img img__card" alt="">
       <label for="${dataReg[key].name}" class="label label__country">${dataReg[key].name}</label>
-       <li class="li data__li" attr-data="${dataReg[key].population}">Population: </li>
-       <li class="li data__li" attr-data="${dataReg[key].region}">Region: </li>
-       <li class="li data__li" attr-data="${dataReg[key].capital}">Capital: </li>
+      <ul>
+      <li class="li data__li" attr-data="${dataReg[key].population}">Population: </li>
+      <li class="li data__li" attr-data="${dataReg[key].region}">Region: </li>
+      <li class="li data__li" attr-data="${dataReg[key].capital}">Capital: </li>
+      </ul>
       </div>`;
    }
 }
@@ -67,9 +69,12 @@ document.getElementById('input__content').addEventListener('keyup', (e)=>{
                contCard.innerHTML+=`<div class="card" id="${iterator.alpha3Code}">
                <img src="${iterator.flag}" class="img img__card" alt="">
                <label for="${iterator.name}" class="label label__country">${iterator.name}</label>
+               <ul>
                <li class="li data__li" attr-data="${iterator.population}">Population: </li>
                <li class="li data__li" attr-data="${iterator.region}">Region: </li>
                <li class="li data__li" attr-data="${iterator.capital}">Capital: </li>
+               </ul>
+               
                </div>`;
             }
          }
