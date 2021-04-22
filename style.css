@@ -377,6 +377,9 @@ textarea::-webkit-input-placeholder{
     .content--select{
         width: initial;
     }
+    .input__content{
+        width: 20%;
+    }
         /* Details */
         .img_card__details{
             width: 90%;
