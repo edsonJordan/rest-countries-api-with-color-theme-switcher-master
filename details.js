@@ -25,7 +25,7 @@ const paintDetails = (dataCountry) =>{
                         </div>
                         <div class="card__details__content">
                             <div class="card__details__country">
-                                <label for="${dataCountry.name}" class="label label__country label__country__details">${dataCountry.name}</label>
+                                <p  class="label label__country label__country__details">${dataCountry.name}</p>
                             </div>
                             <div >
                                 <lu class="card_details__info">

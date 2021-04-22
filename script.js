@@ -23,7 +23,7 @@ let painCards = (dataReg)=>{
    for (const key in dataReg) {
       contCard.innerHTML+=`<div class="card" id="${dataReg[key].alpha3Code}">
       <img src="${dataReg[key].flag}" class="img img__card" alt="">
-      <label for="${dataReg[key].alpha3Code}" class="label label__country">${dataReg[key].name}</label>
+      <p class="label label__country">${dataReg[key].name}</p>
       <ul>
       <li class="li data__li" >Population: ${dataReg[key].population}</li>
       <li class="li data__li" >Region: ${dataReg[key].region}</li>
@@ -66,10 +66,9 @@ document.getElementById('input__content').addEventListener('keyup', (e)=>{
             } 
             let result = new String(iterator.name.toLowerCase().trim().replace(/ /g, ""));
             if(result.indexOf(keySearch) !== -1){
-               console.log(iterator.alpha3Code);
                contCard.innerHTML+=`<div class="card" id="${iterator.alpha3Code}">
                <img src="${iterator.flag}" class="img img__card" alt="">
-               <label for="${iterator.alpha3Code}" class="label label__country">${iterator.name}</label>
+               <p  class="label label__country">${iterator.name}</p>
                <ul>
                <li class="li data__li">Population: ${iterator.population} </li>
                <li class="li data__li">Region: ${iterator.region}</li>
