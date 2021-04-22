@@ -29,14 +29,14 @@ const paintDetails = (dataCountry) =>{
                             </div>
                             <div class="card_details__info">
                                 <lu>
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.nativeName}">Native Name: </li>
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.topLevelDomain[0]}">Top Level Domain: </li>
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.population}">Population: </li>                                
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.languages[0].iso639_2 +', '+ dataCountry.languages[0].name +', '+ dataCountry.languages[0].nativeName}">Lenguages: </li>                                
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.capital}">Capital: </li>
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.region}">Region: </li>
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.subregion}">Sub Region: </li>
-                                <li class="li data__li data__li__details" attr-data="${dataCountry.currencies[0].name}">Currencies: </li>    
+                                <li class="li data__li data__li__details" id="${dataCountry.nativeName}">Native Name: </li>
+                                <li class="li data__li data__li__details" id="${dataCountry.topLevelDomain[0]}">Top Level Domain: </li>
+                                <li class="li data__li data__li__details" id="${dataCountry.population}">Population: </li>                                
+                                <li class="li data__li data__li__details" id="${dataCountry.languages[0].iso639_2 +', '+ dataCountry.languages[0].name +', '+ dataCountry.languages[0].nativeName}">Lenguages: </li>                                
+                                <li class="li data__li data__li__details" id="${dataCountry.capital}">Capital: </li>
+                                <li class="li data__li data__li__details" id="${dataCountry.region}">Region: </li>
+                                <li class="li data__li data__li__details" id="${dataCountry.subregion}">Sub Region: </li>
+                                <li class="li data__li data__li__details" id="${dataCountry.currencies[0].name}">Currencies: </li>    
                                 </lu>                            
                             </div>                        
                             <div class="card__details__footer">
