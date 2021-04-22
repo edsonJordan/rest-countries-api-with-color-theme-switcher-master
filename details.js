@@ -27,16 +27,16 @@ const paintDetails = (dataCountry) =>{
                             <div class="card__details__country">
                                 <label for="${dataCountry.name}" class="label label__country label__country__details">${dataCountry.name}</label>
                             </div>
-                            <div class="card_details__info">
-                                <lu>
-                                <li class="li data__li data__li__details" value="${dataCountry.nativeName}">Native Name: </li>
-                                <li class="li data__li data__li__details" value="${dataCountry.topLevelDomain[0]}">Top Level Domain: </li>
-                                <li class="li data__li data__li__details" value="${dataCountry.population}">Population: </li>                                
-                                <li class="li data__li data__li__details" value="${dataCountry.languages[0].iso639_2 +', '+ dataCountry.languages[0].name +', '+ dataCountry.languages[0].nativeName}">Lenguages: </li>                                
-                                <li class="li data__li data__li__details" value="${dataCountry.capital}">Capital: </li>
-                                <li class="li data__li data__li__details" value="${dataCountry.region}">Region: </li>
-                                <li class="li data__li data__li__details" value="${dataCountry.subregion}">Sub Region: </li>
-                                <li class="li data__li data__li__details" value="${dataCountry.currencies[0].name}">Currencies: </li>    
+                            <div >
+                                <lu class="card_details__info">
+                                <li class="li data__li data__li__details">Native Name: ${dataCountry.nativeName}</li>
+                                <li class="li data__li data__li__details">Top Level Domain: ${dataCountry.topLevelDomain[0]}</li>
+                                <li class="li data__li data__li__details">Population: ${dataCountry.population}</li>                                
+                                <li class="li data__li data__li__details">Lenguages: ${dataCountry.languages[0].iso639_2 +', '+ dataCountry.languages[0].name +', '+ dataCountry.languages[0].nativeName}</li>                                
+                                <li class="li data__li data__li__details">Capital: ${dataCountry.capital}</li>
+                                <li class="li data__li data__li__details">Region: ${dataCountry.region}</li>
+                                <li class="li data__li data__li__details">Sub Region: ${dataCountry.subregion}</li>
+                                <li class="li data__li data__li__details">Currencies: ${dataCountry.currencies[0].name}</li>    
                                 </lu>                            
                             </div>                        
                             <div class="card__details__footer">

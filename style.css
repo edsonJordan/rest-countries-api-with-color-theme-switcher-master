@@ -263,11 +263,7 @@ textarea::-webkit-input-placeholder{
 .data__li__details:last-of-type{
     padding-bottom: initial;
 }
-.data__li::after{
-    display: inline-block;
-    font-weight: 400;
-    content: attr(value);
-}
+
 
 /* Finish code garbage */
 .button{
@@ -384,7 +380,6 @@ textarea::-webkit-input-placeholder{
         /* Details */
         .img_card__details{
             width: 90%;
-            height: 100%;
         }
         .card__details{
             display: grid;
@@ -409,9 +404,11 @@ textarea::-webkit-input-placeholder{
             flex-direction: row;
             align-items: center;
             margin: auto 0;
+            gap: 2rem;
         }
         .card__details__footer__content{
             display: flex;
+         
         }
         
  }
