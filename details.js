@@ -4,7 +4,7 @@ window.addEventListener('load', (e)=>{
     getCountr(getString);
 })
 let getCountr = async (codeCountr)=>{
-    await fetch(`https://restcountries.eu/rest/v2/alpha/${codeCountr}?fields=name;flag;nativeName;population;region;subregion;capital;topLevelDomain;currencies;languages;borders;`)
+    await fetch(`https://restcountries.com/v2/alpha/${codeCountr}?fields=name,flag,nativeName,population,region,subregion,capital,topLevelDomain,currencies,languages,borders`)
     .then(results => results.json() )
     .then(results =>{
             paintDetails(results);
@@ -45,16 +45,8 @@ const paintDetails = (dataCountry) =>{
                                 </div>
                                 <div class="card__details__footer__content " id="footer__content">                                
                                 </div>       
-                            </div>
+                </div>
         </div>
-       
-       
-       
-       
-       
-       
-       
-     
         `};
         const dataAll = JSON.parse(localStorage.getItem('all'));
         let codeAll = [];

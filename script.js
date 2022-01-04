@@ -7,7 +7,8 @@ window.addEventListener('load',  (e)=>{
    exisAll ?  painCards(consulStor('all')): getApiAll();
 })
 let getApiAll =  async(e) =>{
-   await fetch(`https://restcountries.eu/rest/v2/all?fields=name;population;region;capital;flag;alpha3Code;nativeName`)
+   //await fetch(`https://restcountries.com/v3.1/all?fields=name,capital,currencies`) 
+   await fetch(`https://restcountries.com/v2/all?fields=name,population,region,capital,flag,alpha3Code,nativeName`)
    .then(results => results.json() )
    .then(results =>{
       painCards(results);
@@ -36,7 +37,7 @@ const saveRegion= (key,data) => {
    localStorage.setItem(key, JSON.stringify(data));
 }
 let getApiReg = async (pickRegion)=>{
-    await fetch(`https://restcountries.eu/rest/v2/region/${pickRegion}?fields=name;population;region;capital;flag;alpha3Code`)
+    await fetch(`https://restcountries.com/v2/region/${pickRegion}?fields=name,population,region,capital,flag,alpha3Code`)
     .then(results => results.json() )
     .then(results =>{
       painCards(results);

@@ -47,6 +47,10 @@ ul, li{
     -moz-box-shadow: 0px 1px 9px 0.1px rgba(0,0,0,0.2);
     box-shadow: 0px 1px 9px 0.1px rgba(0,0,0,0.2);
     font-family: var(--font-nunito);
+
+    transition:  all .5s;
+    transition-property: color, background-color;
+
 }
 .check--img{
     display: block;
@@ -289,6 +293,7 @@ textarea::-webkit-input-placeholder{
     width: initial;
     padding:  .2rem;
     text-align: center;
+    height: max-content;
 
  }
 .button-back{
@@ -299,8 +304,11 @@ textarea::-webkit-input-placeholder{
 
 /* Change Mode  */
 .header__changemode{
+
     color: var(--elements-all-white);
     background-color: var(--element-dark-blue);
+    transition:  all .5s;
+    transition-property: color, background-color;
 }
 .content__changeMode,
 .content__changeMode .select__tittle, 
@@ -325,6 +333,8 @@ textarea::-webkit-input-placeholder{
     textarea::-webkit-input-placeholder { /* Mozilla Firefox 4 to 18 */
     color:    var(--elements-all-white);
     opacity:  1;
+    transition:  all .5s;
+    transition-property: color, background-color;
  }
  .select__tittle__changeMode{
      background-image: url(icons/night/angle-down-night.svg);
@@ -332,16 +342,23 @@ textarea::-webkit-input-placeholder{
  .content-card__changeMode .card{
     color: var(--elements-all-white);
     background-color: var(--element-dark-blue);
+    transition:  all .5s;
+    transition-property: color, background-color;
  }
  .details_footer_changeMode a{
     background-color: var(--element-dark-blue);
     color: var(--elements-all-white);
+    transition:  all .5s;
+    transition-property: color, background-color;
 }
  /* Details change Mode */
  .button-back__changeMode{
     color: var(--elements-all-white);
     background-color: var(--element-dark-blue);
      background-image: url(icons/night/arrow-left-night.svg);
+
+     transition:  all .5s;
+    transition-property: color, background-color;
  }
  .content-cards__details .card{
     background-color: transparent   ;
@@ -349,6 +366,9 @@ textarea::-webkit-input-placeholder{
  .border_modeChange a{
     color: var(--elements-all-white);
     background-color: var(--element-dark-blue);
+    transition:  all .5s;
+    transition-property: color, background-color;
+
  }
 
 
